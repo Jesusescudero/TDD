@@ -15,4 +15,8 @@ jobs:
     steps:
     - name: 'Hola Mundo'
       run : echo "Wena Mundo"
+    - name: 'Listar Directorio'
+      run : ls -la
+    - name: 'Fecha actual'
+      run : date
      
