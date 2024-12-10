@@ -19,6 +19,7 @@ jobs:
           node-version: 20.x
           cache: 'npm'
       - run: npm install --legacy-peer-deps --no-fund --no-audit
+      - run: npm run lint
       - run: npm run build
 
      
