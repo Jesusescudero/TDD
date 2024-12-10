@@ -13,13 +13,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4.2.2
-  
-    - name: 'Hola Mundo'
-      run : echo "Wena Mundo"
-    - name: 'Listar Directorio'
-      run : ls -la
-    - name: 'Fecha actual'
-      run : date
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
      
