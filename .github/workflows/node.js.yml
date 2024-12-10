@@ -14,5 +14,5 @@ jobs:
 
     steps:
     - name: 'Hola Mundo'
-      run : "Wena Mundo"
+      run : echo "Wena Mundo"
      
