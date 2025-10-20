@@ -8,6 +8,7 @@
     "build": "vite build",
     "dev": "vite",
     "test": "vitest",
+    "lint": "standard",
     "coverage": "vitest run --coverage"
   },
   "keywords": [],
@@ -26,8 +27,13 @@
     "mathjs": "^12.4.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+    },
+    "optionalDependencies": {
+      "@rollup/rollup-linux-x64-gnu":"4.9.5"
   },
-  "eslintConfig":{
-    "extends": ["./node_modules/standard/eslintrc.json"]
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/standard/eslintrc.json"
+    ]
   }
 }
