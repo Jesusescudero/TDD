@@ -1,0 +1,24 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+#nuevo cambio
+name: Lo que queramos
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  platzi:
+
+    runs-on: ubuntu-latest
+
+
+    steps:
+    - name: 'Hello World'
+      run: echo "Hello World"
+    - name: Dime la fecha
+      run: date
+    - name: Muestra el contenido del directorio
+      run: ls -la
+    - name: Muestra el contenido del directorio
+      run: ls -la
