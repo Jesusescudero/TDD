@@ -6,6 +6,8 @@ name: ActionNefta
 on:
   push:
     branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   Prueba:
@@ -20,7 +22,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           cache: 'npm'
-          
+
       - run: npm ci --legacy-peer-deps --no-fund --no-audit
       - run: npm run lint
       - run: npm test
