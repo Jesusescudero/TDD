@@ -11,13 +11,13 @@ on:
 jobs:
   platzi:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     
     steps:
       - name: 'Hello World'
         run: echo "Hello World"
       - name: Dime la fecha
-        run: Date
+        run: Get-Date
       - name: Muestra el contenido del directorio
-        run: ls -la
+        run: dir
 
